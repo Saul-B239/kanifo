@@ -6,7 +6,7 @@ import { generalFaq } from "@/content/fr/faq";
 
 export const metadata: Metadata = {
   title: "FAQ : questions fréquentes",
-  description: "Gratuité, confidentialité, limites de fichiers, QR codes : toutes les réponses aux questions fréquentes sur Toolify.",
+  description: "Gratuité, confidentialité, limites de fichiers, QR codes : toutes les réponses aux questions fréquentes sur Kanifo.",
   alternates: { canonical: "/faq" },
 };
 

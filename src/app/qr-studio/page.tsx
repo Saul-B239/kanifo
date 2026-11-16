@@ -25,8 +25,8 @@ const steps = [
 
 const faq: Faq[] = [
   { q: "Le générateur de QR code est-il vraiment gratuit ?", a: "Oui. La création, la personnalisation et l'export en haute définition sont gratuits, sans inscription, sans filigrane et sans limite de nombre." },
-  { q: "Les QR codes expirent-ils ?", a: "Non. Ce sont des QR codes statiques : le contenu est inscrit dans l'image elle-même. Ils fonctionnent indéfiniment, sans dépendre de Toolify ni d'un abonnement." },
-  { q: "Puis-je modifier la destination d'un QR code déjà imprimé ?", a: "Non, car un QR code statique ne peut pas être modifié après sa création. Les QR codes dynamiques, dont la destination reste modifiable, nécessitent un service de redirection qui n'est pas encore proposé par Toolify." },
+  { q: "Les QR codes expirent-ils ?", a: "Non. Ce sont des QR codes statiques : le contenu est inscrit dans l'image elle-même. Ils fonctionnent indéfiniment, sans dépendre de Kanifo ni d'un abonnement." },
+  { q: "Puis-je modifier la destination d'un QR code déjà imprimé ?", a: "Non, car un QR code statique ne peut pas être modifié après sa création. Les QR codes dynamiques, dont la destination reste modifiable, nécessitent un service de redirection qui n'est pas encore proposé par Kanifo." },
   { q: "Comment créer un QR code Wi-Fi ?", a: "Choisis le type « Wi-Fi », saisis le nom du réseau (SSID), le type de sécurité et le mot de passe. En scannant le code, tes invités se connectent sans rien taper. Le mot de passe reste dans ton navigateur : il n'est pas transmis." },
   { q: "Puis-je ajouter mon logo au centre du QR code ?", a: "Oui. Importe une image JPG, PNG ou WebP : le niveau de correction d'erreur est automatiquement relevé et la taille du logo plafonnée pour que le code reste scannable." },
   { q: "Quel format choisir : PNG, SVG ou WebP ?", a: "SVG pour l'impression (affiches, emballages, cartes de visite) car il reste net à toutes les tailles. PNG pour un usage universel à l'écran et dans les documents. WebP pour un site web, grâce à son poids réduit." },
@@ -59,7 +59,7 @@ export default function QrStudioPage() {
           </ol>
           <h2 className="mt-10 text-xl font-semibold tracking-tight sm:text-2xl">Un QR code qui reste lisible</h2>
           <p className="mt-4 leading-relaxed text-muted">Un QR code trop stylisé peut devenir impossible à scanner. Le QR Studio calcule le rapport de contraste entre chaque couleur et le fond, vérifie la zone de silence, adapte la correction d&apos;erreur lorsqu&apos;un logo est présent, puis décode le résultat final avec un véritable lecteur. Ces contrôles ne remplacent pas un essai avec ton téléphone avant impression, mais ils évitent les erreurs les plus courantes.</p>
-          <p className="mt-4 text-sm text-muted">Besoin d&apos;autre chose ? Découvre <Link href="/tools" className="font-medium text-accent-text underline-offset-4 hover:underline">tous les outils Toolify</Link>, comme le <Link href="/tools/compresseur-image" className="font-medium text-accent-text underline-offset-4 hover:underline">compresseur d&apos;images</Link> ou le <Link href="/tools/generateur-mot-de-passe" className="font-medium text-accent-text underline-offset-4 hover:underline">générateur de mots de passe</Link>.</p>
+          <p className="mt-4 text-sm text-muted">Besoin d&apos;autre chose ? Découvre <Link href="/tools" className="font-medium text-accent-text underline-offset-4 hover:underline">tous les outils Kanifo</Link>, comme le <Link href="/tools/compresseur-image" className="font-medium text-accent-text underline-offset-4 hover:underline">compresseur d&apos;images</Link> ou le <Link href="/tools/generateur-mot-de-passe" className="font-medium text-accent-text underline-offset-4 hover:underline">générateur de mots de passe</Link>.</p>
         </section>
         <section aria-labelledby="faq-qr">
           <h2 id="faq-qr" className="mb-5 text-xl font-semibold tracking-tight sm:text-2xl">Questions fréquentes sur les QR codes</h2>
@@ -67,7 +67,7 @@ export default function QrStudioPage() {
         </section>
       </div>
       <JsonLd data={{
-        "@context": "https://schema.org", "@type": "WebApplication", name: "Toolify QR Studio", url: absoluteUrl("/qr-studio"), description,
+        "@context": "https://schema.org", "@type": "WebApplication", name: "Kanifo QR Studio", url: absoluteUrl("/qr-studio"), description,
         applicationCategory: "DesignApplication", operatingSystem: "Tous (navigateur web)", inLanguage: "fr", isAccessibleForFree: true,
         offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
         featureList: ["QR code URL", "QR code Wi-Fi", "QR code vCard", "Logo central", "Export PNG, SVG, WebP", "Contrôle de lisibilité"],

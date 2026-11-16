@@ -1,8 +1,8 @@
-# Toolify
+# Kanifo
 
 > Tous les outils dont tu as besoin. Au même endroit.
 
-Toolify est une plateforme web d'outils gratuits en ligne : 53 outils répartis en six catégories (texte, images, PDF, mathématiques, développeurs, productivité) et un studio complet de création de QR codes. Tous les traitements se font dans le navigateur : aucun fichier n'est envoyé à un serveur.
+Kanifo est une plateforme web d'outils gratuits en ligne : 53 outils répartis en six catégories (texte, images, PDF, mathématiques, développeurs, productivité) et un studio complet de création de QR codes. Tous les traitements se font dans le navigateur : aucun fichier n'est envoyé à un serveur.
 
 ## Sommaire
 
@@ -147,7 +147,7 @@ La page, les métadonnées, le sitemap, la recherche, le catalogue et les liens 
 - Le HTML produit par l'éditeur Markdown est assaini par DOMPurify.
 - Les mots de passe, UUID et tirages au sort utilisent `crypto.getRandomValues` avec une méthode sans biais.
 - En-têtes de sécurité définis dans `next.config.ts`. Aucune clé secrète n'est exposée au client.
-- Aucun cookie ni traceur tiers. Les préférences sont stockées dans `localStorage` sous le préfixe `toolify:`.
+- Aucun cookie ni traceur tiers. Les préférences sont stockées dans `localStorage` sous le préfixe `kanifo:`.
 
 ## Limites connues
 
@@ -179,4 +179,4 @@ Le contrat est décrit dans `src/lib/qr/dynamic.ts` : table de liens, route de r
 ### Monétisation
 
 - **Publicité.** Le composant `AdSlot` réserve des emplacements sur l'accueil et sous chaque outil. Il ne rend rien tant que `NEXT_PUBLIC_ADS_ENABLED` n'est pas à `true`. Avant d'y brancher une régie, ajoute un bandeau de consentement et mets à jour `/privacy`.
-- **Toolify Pro.** Chaque outil porte un champ `tier: "free" | "pro"`, aujourd'hui toujours `free`. Un futur système de paiement pourra s'appuyer dessus sans modifier les outils existants.
+- **Kanifo Pro.** Chaque outil porte un champ `tier: "free" | "pro"`, aujourd'hui toujours `free`. Un futur système de paiement pourra s'appuyer dessus sans modifier les outils existants.

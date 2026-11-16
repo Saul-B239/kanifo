@@ -14,7 +14,7 @@ export function ContactForm({ contactEmail }: { contactEmail: string }) {
   const set = <K extends keyof ContactInput>(k: K, v: ContactInput[K]) => { setForm((f) => ({ ...f, [k]: v })); setErrors((e) => ({ ...e, [k]: undefined })); };
 
   const mailto = contactEmail
-    ? `mailto:${contactEmail}?subject=${encodeURIComponent(`[Toolify] ${subjectLabels[form.subject]}`)}&body=${encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`)}`
+    ? `mailto:${contactEmail}?subject=${encodeURIComponent(`[Kanifo] ${subjectLabels[form.subject]}`)}&body=${encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`)}`
     : null;
 
   async function submit(e: React.FormEvent) {

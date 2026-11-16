@@ -8,7 +8,7 @@ const cols = [
   { title: "Catégories", links: categories.map((c) => ({ href: `/tools?categorie=${c.id}`, label: `Outils ${c.name}` })) },
   { title: "Outils populaires", links: popularTools(6).map((t) => ({ href: `/tools/${t.slug}`, label: t.name })) },
   {
-    title: "Toolify",
+    title: "Kanifo",
     links: [
       { href: "/tools", label: "Tous les outils" },
       { href: "/qr-studio", label: "QR Studio" },
@@ -50,7 +50,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-[13px] text-muted sm:flex-row sm:items-center sm:justify-between">
-          <p>© Toolify. Tous droits réservés.</p>
+          <p>© Kanifo. Tous droits réservés.</p>
           <p>Conçu pour être rapide, simple et gratuit.</p>
         </div>
       </div>

@@ -12,7 +12,7 @@ import { cn, downloadBlob, downloadText, formatBytes, randomInt, shuffle } from 
 import { Row, StatGrid, TwoCols } from "./shared";
 
 /* ---------- JSON ---------- */
-const SAMPLE_JSON = '{"nom":"Toolify","gratuit":true,"outils":53,"categories":["texte","images","pdf"],"qr":{"formats":["png","svg"],"logo":null}}';
+const SAMPLE_JSON = '{"nom":"Kanifo","gratuit":true,"outils":53,"categories":["texte","images","pdf"],"qr":{"formats":["png","svg"],"logo":null}}';
 
 function JsonError({ text, line, column, message }: { text: string; line?: number; column?: number; message: string }) {
   const lines = text.split("\n");

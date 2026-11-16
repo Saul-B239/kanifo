@@ -9,7 +9,7 @@ import { getTool, popularTools } from "@/lib/tools/registry";
 import { searchTools } from "@/lib/tools/search";
 import { cn, normalize } from "@/lib/utils";
 
-export const openSearch = () => window.dispatchEvent(new Event("toolify:search"));
+export const openSearch = () => window.dispatchEvent(new Event("kanifo:search"));
 
 interface Item { key: string; href: string; title: string; subtitle: string; icon: React.ReactNode; slug?: string }
 
@@ -33,8 +33,8 @@ export function CommandPalette() {
     };
     const onOpen = () => setOpen(true);
     window.addEventListener("keydown", onKey);
-    window.addEventListener("toolify:search", onOpen);
-    return () => { window.removeEventListener("keydown", onKey); window.removeEventListener("toolify:search", onOpen); };
+    window.addEventListener("kanifo:search", onOpen);
+    return () => { window.removeEventListener("keydown", onKey); window.removeEventListener("kanifo:search", onOpen); };
   }, []);
 
   useEffect(() => {

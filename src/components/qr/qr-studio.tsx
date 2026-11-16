@@ -18,7 +18,7 @@ const EYE_DOTS: [EyeDotType, string][] = [["square", "Carré"], ["dot", "Point"]
 const EC: [EcLevel, string][] = [["L", "L · 7 %"], ["M", "M · 15 %"], ["Q", "Q · 25 %"], ["H", "H · 30 %"]];
 const SIZES = [512, 1024, 2048, 4096];
 const NO_SAVED: SavedQr[] = [];
-const PLACEHOLDER = "https://toolify.app";
+const PLACEHOLDER = "https://exemple.fr";
 
 function Section({ title, children, hint }: { title: string; children: React.ReactNode; hint?: string }) {
   return (

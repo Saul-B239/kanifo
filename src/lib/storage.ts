@@ -7,7 +7,7 @@ import { useCallback, useSyncExternalStore } from "react";
  */
 const listeners = new Map<string, Set<() => void>>();
 const cache = new Map<string, { raw: string | null; value: unknown }>();
-const PREFIX = "toolify:";
+const PREFIX = "kanifo:";
 
 function read<T>(key: string, fallback: T): T {
   let raw: string | null = null;

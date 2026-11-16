@@ -4,13 +4,13 @@ import { ProsePage } from "@/components/content";
 
 export const metadata: Metadata = {
   title: "Politique de confidentialité",
-  description: "Comment Toolify traite tes données : traitement local des fichiers, stockage dans le navigateur, absence de compte et de traceurs publicitaires.",
+  description: "Comment Kanifo traite tes données : traitement local des fichiers, stockage dans le navigateur, absence de compte et de traceurs publicitaires.",
   alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {
   return (
-    <ProsePage title="Politique de confidentialité" crumbs={[{ label: "Confidentialité" }]} intro="Toolify est conçu pour fonctionner sans collecter tes données personnelles. Cette page explique précisément ce qui est traité, où, et pourquoi.">
+    <ProsePage title="Politique de confidentialité" crumbs={[{ label: "Confidentialité" }]} intro="Kanifo est conçu pour fonctionner sans collecter tes données personnelles. Cette page explique précisément ce qui est traité, où, et pourquoi.">
       <h2>1. L&apos;essentiel</h2>
       <ul>
         <li>Les fichiers (images, PDF) et les textes que tu utilises dans les outils sont traités <strong>localement, dans ton navigateur</strong>. Ils ne sont pas envoyés à nos serveurs.</li>
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <li>Tes préférences sont enregistrées sur ton appareil et ne nous sont pas transmises.</li>
       </ul>
       <h2>2. Données stockées sur ton appareil</h2>
-      <p>Pour te proposer certaines fonctionnalités sans compte, Toolify utilise le stockage local de ton navigateur (<code>localStorage</code>). Y sont enregistrés uniquement :</p>
+      <p>Pour te proposer certaines fonctionnalités sans compte, Kanifo utilise le stockage local de ton navigateur (<code>localStorage</code>). Y sont enregistrés uniquement :</p>
       <ul>
         <li>la liste de tes outils favoris ;</li>
         <li>ton choix de thème (clair ou sombre) ;</li>
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
       <h2>4. Données techniques</h2>
       <p>Comme tout site web, notre hébergeur traite des données techniques (adresse IP, type de navigateur, pages demandées) dans des journaux serveur, afin d&apos;assurer la sécurité et le bon fonctionnement du service.</p>
       <h2>5. Cookies et publicité</h2>
-      <p>Toolify ne dépose aucun cookie publicitaire ni traceur tiers à ce jour. Si des emplacements publicitaires ou un outil de mesure d&apos;audience étaient ajoutés, cette politique serait mise à jour au préalable et ton consentement serait demandé lorsque la réglementation l&apos;exige.</p>
+      <p>Kanifo ne dépose aucun cookie publicitaire ni traceur tiers à ce jour. Si des emplacements publicitaires ou un outil de mesure d&apos;audience étaient ajoutés, cette politique serait mise à jour au préalable et ton consentement serait demandé lorsque la réglementation l&apos;exige.</p>
       <h2>6. Tes droits</h2>
       <p>Conformément au Règlement général sur la protection des données (RGPD), tu disposes d&apos;un droit d&apos;accès, de rectification, d&apos;effacement, de limitation et d&apos;opposition concernant les données personnelles que nous détiendrions (en pratique, les messages envoyés via le formulaire de contact). Pour exercer ces droits, utilise la <Link href="/contact">page de contact</Link>. Tu peux également introduire une réclamation auprès de la CNIL.</p>
       <h2>7. Modifications</h2>

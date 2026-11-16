@@ -16,7 +16,7 @@ import { newestTools, popularTools, tools, toolsByCategory } from "@/lib/tools/r
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: { absolute: "Toolify — Tous tes outils en ligne gratuits, au même endroit" },
+  title: { absolute: "Kanifo — Tous tes outils en ligne gratuits, au même endroit" },
   description: site.description,
   alternates: { canonical: "/" },
 };
@@ -27,7 +27,7 @@ const reasons = [
   { icon: Sparkles, title: "100 % gratuit", text: "Tous les outils sont en accès libre, sans filigrane, sans limite cachée et sans publicité agressive." },
   { icon: Layers, title: "Tout au même endroit", text: `${tools.length} outils et un studio de QR codes réunis dans une interface cohérente et soignée.` },
   { icon: Gauge, title: "Rapide partout", text: "Une interface légère qui se charge vite, pensée pour le mobile comme pour les grands écrans." },
-  { icon: Heart, title: "À ta main", text: "Favoris, recherche au clavier, thème clair ou sombre : Toolify s'adapte à ta façon de travailler." },
+  { icon: Heart, title: "À ta main", text: "Favoris, recherche au clavier, thème clair ou sombre : Kanifo s'adapte à ta façon de travailler." },
 ];
 
 const qrFeatures = [
@@ -145,7 +145,7 @@ export default function HomePage() {
 
       {/* Pourquoi */}
       <Container className="py-12">
-        <SectionHeading eyebrow="Nos engagements" title="Pourquoi choisir Toolify ?" description="Des outils simples, qui font ce qu'ils annoncent, dans le respect de tes données." />
+        <SectionHeading eyebrow="Nos engagements" title="Pourquoi choisir Kanifo ?" description="Des outils simples, qui font ce qu'ils annoncent, dans le respect de tes données." />
         <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((r) => (
             <div key={r.title} className="bg-surface p-6 transition-colors hover:bg-subtle/40">

@@ -4,7 +4,7 @@ import { FavoritesList } from "@/components/favorites-list";
 
 export const metadata: Metadata = {
   title: "Mes outils favoris",
-  description: "Retrouve en un clic les outils Toolify que tu as ajoutés à tes favoris. Enregistrés localement, sans compte.",
+  description: "Retrouve en un clic les outils Kanifo que tu as ajoutés à tes favoris. Enregistrés localement, sans compte.",
   alternates: { canonical: "/favorites" },
   robots: { index: false, follow: true },
 };

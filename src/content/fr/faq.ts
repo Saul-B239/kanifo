@@ -1,11 +1,11 @@
 import type { Faq } from "@/lib/tools/types";
 
 export const homeFaq: Faq[] = [
-  { q: "Toolify est-il vraiment gratuit ?", a: "Oui. Tous les outils et le QR Studio sont accessibles gratuitement, sans inscription et sans limite cachée. Si une offre Pro voit le jour, elle ajoutera des fonctions avancées sans retirer celles qui existent." },
+  { q: "Kanifo est-il vraiment gratuit ?", a: "Oui. Tous les outils et le QR Studio sont accessibles gratuitement, sans inscription et sans limite cachée. Si une offre Pro voit le jour, elle ajoutera des fonctions avancées sans retirer celles qui existent." },
   { q: "Faut-il créer un compte ?", a: "Non. Tu peux utiliser tous les outils immédiatement. Tes favoris, ton thème et tes QR codes sauvegardés sont enregistrés localement dans ton navigateur." },
-  { q: "Mes fichiers sont-ils envoyés sur vos serveurs ?", a: "Non. Les images, PDF et textes sont traités directement dans ton navigateur, sur ton appareil. Ils ne sont ni téléversés ni stockés par Toolify." },
-  { q: "Les QR codes créés ont-ils une date d'expiration ?", a: "Non. Les QR codes générés par le QR Studio sont statiques : l'information est inscrite dans l'image elle-même. Ils fonctionnent indéfiniment et sans dépendre de Toolify." },
-  { q: "Toolify fonctionne-t-il sur mobile ?", a: "Oui. Le site s'adapte aux smartphones, tablettes et ordinateurs, et fonctionne dans tous les navigateurs récents (Chrome, Safari, Firefox, Edge)." },
+  { q: "Mes fichiers sont-ils envoyés sur vos serveurs ?", a: "Non. Les images, PDF et textes sont traités directement dans ton navigateur, sur ton appareil. Ils ne sont ni téléversés ni stockés par Kanifo." },
+  { q: "Les QR codes créés ont-ils une date d'expiration ?", a: "Non. Les QR codes générés par le QR Studio sont statiques : l'information est inscrite dans l'image elle-même. Ils fonctionnent indéfiniment et sans dépendre de Kanifo." },
+  { q: "Kanifo fonctionne-t-il sur mobile ?", a: "Oui. Le site s'adapte aux smartphones, tablettes et ordinateurs, et fonctionne dans tous les navigateurs récents (Chrome, Safari, Firefox, Edge)." },
   { q: "Comment retrouver rapidement un outil ?", a: "Utilise la recherche (raccourci Ctrl+K ou Cmd+K), filtre le catalogue par catégorie, ou ajoute tes outils préférés aux favoris en cliquant sur le cœur." },
 ];
 
@@ -14,8 +14,8 @@ export const generalFaq: { title: string; items: Faq[] }[] = [
   {
     title: "Confidentialité et sécurité",
     items: [
-      { q: "Quelles données Toolify conserve-t-il ?", a: "Aucune donnée personnelle n'est collectée par les outils. Les préférences (favoris, thème, historique de recherche, tâches, QR codes sauvegardés) restent dans le stockage local de ton navigateur et ne nous sont jamais transmises." },
-      { q: "Comment effacer mes données locales ?", a: "Efface les données de site de ton navigateur pour Toolify, ou supprime les éléments un à un depuis les pages concernées (favoris, historique du QR Studio, to-do list)." },
+      { q: "Quelles données Kanifo conserve-t-il ?", a: "Aucune donnée personnelle n'est collectée par les outils. Les préférences (favoris, thème, historique de recherche, tâches, QR codes sauvegardés) restent dans le stockage local de ton navigateur et ne nous sont jamais transmises." },
+      { q: "Comment effacer mes données locales ?", a: "Efface les données de site de ton navigateur pour Kanifo, ou supprime les éléments un à un depuis les pages concernées (favoris, historique du QR Studio, to-do list)." },
       { q: "Les mots de passe générés sont-ils sûrs ?", a: "Ils sont créés dans ton navigateur à l'aide du générateur aléatoire cryptographique (Web Crypto) et ne transitent par aucun serveur." },
     ],
   },

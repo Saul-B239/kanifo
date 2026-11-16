@@ -52,10 +52,10 @@ export async function POST(req: Request) {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({
-        from: process.env.CONTACT_FROM_EMAIL ?? "Toolify <onboarding@resend.dev>",
+        from: process.env.CONTACT_FROM_EMAIL ?? "Kanifo <onboarding@resend.dev>",
         to: [to],
         reply_to: email,
-        subject: `[Toolify] ${subjectLabels[subject]} — ${name.replace(/[\r\n]+/g, " ")}`,
+        subject: `[Kanifo] ${subjectLabels[subject]} — ${name.replace(/[\r\n]+/g, " ")}`,
         html: `<p><strong>De :</strong> ${escapeHtml(name)} &lt;${escapeHtml(email)}&gt;</p><p><strong>Sujet :</strong> ${escapeHtml(subjectLabels[subject])}</p><p style="white-space:pre-wrap">${escapeHtml(message)}</p>`,
       }),
       signal: AbortSignal.timeout(10_000),

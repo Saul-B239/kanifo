@@ -6,7 +6,7 @@ import { sortTools } from "@/lib/tools/search";
 
 export const metadata: Metadata = {
   title: "Nouveautés : les derniers outils ajoutés",
-  description: "Découvre les derniers outils gratuits ajoutés à Toolify, classés du plus récent au plus ancien.",
+  description: "Découvre les derniers outils gratuits ajoutés à Kanifo, classés du plus récent au plus ancien.",
   alternates: { canonical: "/new" },
 };
 

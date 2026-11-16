@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Une question, un bug à signaler ou une idée d'outil ? Contacte l'équipe Toolify via le formulaire.",
+  description: "Une question, un bug à signaler ou une idée d'outil ? Contacte l'équipe Kanifo via le formulaire.",
   alternates: { canonical: "/contact" },
 };
 

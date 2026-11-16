@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
-  description: "Mentions légales du site Toolify : éditeur, hébergeur et contact.",
+  description: "Mentions légales du site Kanifo : éditeur, hébergeur et contact.",
   alternates: { canonical: "/legal" },
 };
 
